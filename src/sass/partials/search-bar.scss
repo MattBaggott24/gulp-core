@@ -1,0 +1,39 @@
+.srch-bar {
+	background-color: $background-green;
+	padding: 2.4rem 6.4rem;
+
+	display: flex;
+	gap: 2.4rem;
+
+	max-width: 140rem;
+
+	align-items: center;
+	justify-content: center;
+
+	font-size: 1.6rem;
+
+	position: absolute;
+
+	top: 9.5%;
+	left: 50%;
+	transform: translateX(-50%);
+
+	&__srch-header {
+		font-size: 3.2rem;
+		font-weight: 600;
+		color: #fff;
+	}
+
+	&__group {
+		display: flex;
+		gap: 0.8rem;
+	}
+
+	&__input {
+		height: 3.2rem;
+		width: 32rem;
+		border: none;
+		padding: 1.2rem;
+		font-size: 1.8rem;
+	}
+}

@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+header {
+  font-size: 12rem;
+}
+
+.btn {
+  border: none;
+  padding: 1rem 1.8rem;
+  font-size: 2.2rem;
+  font-weight: 500;
+  cursor: pointer;
+  align-self: flex-start;
+}
+
+.sign-in-btn {
+  background-color: #009292;
+  box-shadow: 0 0.3rem 0 0 #fd0;
+}
+.sign-in-btn:hover, .sign-in-btn:active, .sign-in-btn:focus {
+  outline: 3px solid #009292;
+  box-shadow: 0 0.5rem 0 0.3rem #009292;
+  background-color: #fd0;
+}
+.sign-in-btn:hover {
+  outline: none;
+  box-shadow: 0 0.3rem 0 0 #009292;
+}
+
+.primary-btn {
+  background-color: #fd0;
+  color: #006469;
+  box-shadow: 0 0.3rem 0 0 #009292;
+  font-weight: 600;
+}
+.primary-btn:hover, .primary-btn:active, .primary-btn:focus {
+  background-color: #009292;
+  color: #009292;
+  box-shadow: 0 0.4rem 0 0 #fd0;
+}
+.primary-btn:active, .primary-btn:focus {
+  outline: none;
+  color: #fd0;
+}
+
+.secondary-btn {
+  background-color: #daf2f2;
+  box-shadow: 0 0.3rem 0 0 #4c4c4c;
+}
+.secondary-btn:hover {
+  background-color: #a1e6e6;
+}
+.secondary-btn:active, .secondary-btn:focus {
+  outline: 3px solid #009292;
+  box-shadow: 0 0.5rem 0 0.3rem #4c4c4c;
+  background-color: #a1e6e6;
+}
+
+.srch-bar {
+  background-color: #006469;
+  padding: 2.4rem 6.4rem;
+  display: flex;
+  gap: 2.4rem;
+  max-width: 140rem;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+  position: absolute;
+  top: 9.5%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.srch-bar__srch-header {
+  font-size: 3.2rem;
+  font-weight: 600;
+  color: #fff;
+}
+.srch-bar__group {
+  display: flex;
+  gap: 0.8rem;
+}
+.srch-bar__input {
+  height: 3.2rem;
+  width: 32rem;
+  border: none;
+  padding: 1.2rem;
+  font-size: 1.8rem;
+}

@@ -1,0 +1,12 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: 62.5%;
+}
+@import "variables.scss";
+
+@import "elements/elements.scss";
+@import "partials/partials.scss";

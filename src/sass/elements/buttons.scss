@@ -1,0 +1,61 @@
+.btn {
+	border: none;
+	padding: 1rem 1.8rem;
+	font-size: 2.2rem;
+	font-weight: 500;
+	cursor: pointer;
+	align-self: flex-start;
+}
+
+.sign-in-btn {
+	background-color: $primary-green;
+	box-shadow: 0 0.3rem 0 0 $primary-yellow;
+
+	&:hover,
+	&:active,
+	&:focus {
+		outline: 3px solid $primary-green;
+		box-shadow: 0 0.5rem 0 0.3rem $primary-green;
+		background-color: $primary-yellow;
+	}
+	&:hover {
+		outline: none;
+		box-shadow: 0 0.3rem 0 0 $primary-green;
+	}
+}
+
+.primary-btn {
+	background-color: $primary-yellow;
+	color: $primary-text;
+	box-shadow: 0 0.3rem 0 0 $primary-green;
+	font-weight: 600;
+
+	&:hover,
+	&:active,
+	&:focus {
+		background-color: $primary-green;
+		color: $primary-green;
+		box-shadow: 0 0.4rem 0 0 $primary-yellow;
+	}
+
+	&:active,
+	&:focus {
+		outline: none;
+		color: $primary-yellow;
+	}
+}
+
+.secondary-btn {
+	background-color: $secondary-green;
+	box-shadow: 0 0.3rem 0 0 $secondary-text;
+
+	&:hover {
+		background-color: $secondary-hover;
+	}
+	&:active,
+	&:focus {
+		outline: 3px solid $primary-green;
+		box-shadow: 0 0.5rem 0 0.3rem $secondary-text;
+		background-color: $secondary-hover;
+	}
+}
