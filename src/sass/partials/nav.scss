@@ -1,0 +1,38 @@
+.nav {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	position: relative;
+
+	height: 7.2rem;
+	padding: 0.8rem 10%;
+
+	background-color: $background-green;
+
+	&__list {
+		display: flex;
+		align-items: center;
+		gap: 3.6rem;
+
+		list-style: none;
+
+		padding: 3.2rem;
+	}
+
+	&__link {
+		font-size: 2rem;
+		color: #fff;
+		font-weight: 600;
+		display: inline-block;
+		padding: 0.5rem 0;
+
+		&:hover {
+			color: $primary-yellow;
+		}
+	}
+}
+
+.active-link {
+	border-bottom: 4px solid $primary-yellow;
+	color: $primary-yellow;
+}

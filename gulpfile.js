@@ -2,13 +2,9 @@ const { src, dest, series, watch } = require("gulp");
 const gulp = require("gulp");
 const nunjucksRender = require("gulp-nunjucks-render");
 const browserSync = require("browser-sync").create();
+const imagemin = require("gulp-imagemin");
 
 const sass = require("gulp-sass")(require("sass"));
-// sass.compiler = require("node-sass");
-
-// gulp.task("default", () => {
-// 	// selects a source folder and pipes the files to the dist folder
-// });
 
 function build() {
 	return gulp
@@ -20,11 +16,6 @@ function build() {
 		)
 		.pipe(gulp.dest("dist"));
 }
-
-// gulp.task("buildSass", () => {
-// 	// return gulp.src("./src/sass/**/*.scss").pipe(sass().on("error", sass.logError)).pipe(gulp.dest("./dist/css"));
-// 	return gulp.src("./src/sass/styles.scss").pipe(sass().on("error", sass.logError)).pipe(gulp.dest("./dist/css"));
-// });
 
 function style() {
 	return gulp.src("./src/sass/styles.scss").pipe(sass().on("error", sass.logError)).pipe(gulp.dest("./dist/css")).pipe(browserSync.stream());
@@ -44,22 +35,17 @@ function browsersyncReload(cb) {
 	cb();
 }
 
-function watchTask() {
-	watch("*src/html/**/*.html", series(build, browsersyncReload)); //maybe add 2 lines here
-	watch("src/sass/**/*.scss", series(style, browsersyncReload));
+function buildImage() {
+	return gulp.src("src/images/*").pipe(imagemin()).pipe(gulp.dest("./dist/images"));
 }
-exports.default = series(style, build, browsersyncServer, watchTask);
 
-// function watch() {
-// 	browserSync.init({
-// 		server: {
-// 			baseDir: "./dist",
-// 		},
-// 	});
-// 	gulp.watch("./sass/**/*.scss", style);
-// 	gulp.watch("./html/**/*.html").on("change", browserSync.reload);
-// }
+function watchTask() {
+	watch("src/html/**/*.html", series(build, browsersyncReload));
+	watch("src/sass/**/*.scss", series(style, browsersyncReload));
+	watch("src/images/*", series(buildImage, browsersyncReload));
+}
 
-// exports.style = style;
-// exports.build = build;
-// exports.watch = watch;
+exports.style = style;
+exports.build = build;
+exports.buildImage = buildImage;
+exports.default = series(style, build, buildImage, browsersyncServer, watchTask);

@@ -5,8 +5,15 @@
 
 html {
 	font-size: 62.5%;
+	font-family: sans-serif;
 }
+
+a {
+	text-decoration: none;
+}
+
 @import "variables.scss";
 
 @import "elements/elements.scss";
 @import "partials/partials.scss";
+@import "templates/templates.scss";

@@ -9,7 +9,11 @@
 	"author": "",
 	"license": "ISC",
 	"devDependencies": {
+		"@babel/core": "^7.17.12",
+		"@babel/preset-env": "^7.17.12",
+		"babelify": "^10.0.0",
 		"gulp": "^4.0.2",
+		"gulp-imagemin": "^7.1.0",
 		"gulp-nunjucks-render": "^2.2.3",
 		"gulp-sass": "^5.1.0",
 		"node-sass": "^7.0.1",

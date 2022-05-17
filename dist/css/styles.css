@@ -5,10 +5,11 @@
 
 html {
   font-size: 62.5%;
+  font-family: sans-serif;
 }
 
-header {
-  font-size: 12rem;
+a {
+  text-decoration: none;
 }
 
 .btn {
@@ -63,6 +64,32 @@ header {
   background-color: #a1e6e6;
 }
 
+.text-link {
+  color: #1c9d9d;
+  display: inline-block;
+  padding: 0 0.6rem;
+  text-decoration: underline;
+}
+.text-link:hover, .text-link:focus {
+  background-color: #fd0;
+  color: #136c60;
+}
+
+.text-link.dark-bg {
+  color: #fff;
+}
+.text-link.dark-bg:hover {
+  color: #136c60;
+}
+
+.dark-bg:hover {
+  color: #fd0;
+}
+
+.current {
+  background-color: #fd0;
+}
+
 .srch-bar {
   background-color: #006469;
   padding: 2.4rem 6.4rem;
@@ -92,4 +119,117 @@ header {
   border: none;
   padding: 1.2rem;
   font-size: 1.8rem;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  height: 7.2rem;
+  padding: 0.8rem 10%;
+  background-color: #006469;
+}
+.nav__list {
+  display: flex;
+  align-items: center;
+  gap: 3.6rem;
+  list-style: none;
+  padding: 3.2rem;
+}
+.nav__link {
+  font-size: 2rem;
+  color: #fff;
+  font-weight: 600;
+  display: inline-block;
+  padding: 0.5rem 0;
+}
+.nav__link:hover {
+  color: #fd0;
+}
+
+.active-link {
+  border-bottom: 4px solid #fd0;
+  color: #fd0;
+}
+
+.mobile-menu {
+  display: none;
+  background: none;
+}
+.mobile-menu__icon {
+  height: 4.8rem;
+  width: 4.8rem;
+  fill: #fff;
+  display: none;
+}
+
+.visible {
+  display: block;
+}
+
+.footer {
+  padding: 6.4rem 3.2rem;
+  background-color: #006469;
+  display: flex;
+  justify-content: center;
+}
+.footer__container {
+  max-width: 124rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  color: #fff;
+  column-gap: 8rem;
+}
+
+.social {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+.social__header {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+.social__list {
+  display: flex;
+  gap: 1.6rem;
+  font-size: 1.2rem;
+  list-style: none;
+}
+.social__list__icon {
+  color: #fff;
+  height: 3.2rem;
+  width: 3.2rem;
+}
+.social__list__link {
+  font-size: 1.6rem;
+}
+.social__list__item {
+  display: flex;
+  gap: 0.6rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.f-links {
+  font-size: 1.8rem;
+  display: inline-block;
+}
+.f-links__link {
+  padding: 1.2rem;
+}
+
+.agent-btn {
+  justify-self: end;
+}
+
+.copyright {
+  font-size: 1.4rem;
+  display: flex;
+  align-items: center;
+}
+.copyright__logo {
+  height: 8.4rem;
+  width: 8.4rem;
 }

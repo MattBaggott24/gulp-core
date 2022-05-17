@@ -1,0 +1,26 @@
+.text-link {
+	color: $text-link;
+	display: inline-block;
+	padding: 0 0.6rem;
+	text-decoration: underline;
+	&:hover,
+	&:focus {
+		background-color: $primary-yellow;
+		color: $text-link-hover;
+	}
+}
+
+.text-link.dark-bg {
+	color: #fff;
+	&:hover {
+		color: $text-link-hover;
+	}
+}
+
+.dark-bg:hover {
+	color: $primary-yellow;
+}
+
+.current {
+	background-color: $primary-yellow;
+}
