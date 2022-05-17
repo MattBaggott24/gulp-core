@@ -2,8 +2,13 @@ const { src, dest, series, watch } = require("gulp");
 const gulp = require("gulp");
 const nunjucksRender = require("gulp-nunjucks-render");
 const browserSync = require("browser-sync").create();
+const imagemin = require("gulp-imagemin");
 
 const sass = require("gulp-sass")(require("sass"));
+
+function buildImages() {
+	return gulp.src("src/images/*").pipe(imagemin()).pipe(gulp.dest("dist/images"));
+}
 
 function build() {
 	return gulp
@@ -36,5 +41,7 @@ function browsersyncReload(cb) {
 function watchTask() {
 	watch("*src/html/**/*.html", series(build, browsersyncReload));
 	watch("src/sass/**/*.scss", series(style, browsersyncReload));
+	watch("src/images/*", series(buildImages, browsersyncReload));
 }
-exports.default = series(style, build, browsersyncServer, watchTask);
+
+exports.default = series(style, build, buildImages, browsersyncServer, watchTask);
