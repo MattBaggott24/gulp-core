@@ -1,5 +1,9 @@
-{% extends "../components/templates/core.html" %} {% block content %}
+{% extends "../components/templates/core.html" %} {% block title %} Home Page {% endblock %} {% block content %}
 
-<div class="placeholder-img">img goes here</div>
+<div class="placeholder-img full-width">img goes here</div>
 
-{% include "../components/partials/search-bar.html" %} {% endblock %}
+{% include "../components/partials/search-bar.html" %}
+
+<section class="option-section">{% include "../components/home-page-options.html" %}</section>
+
+{% endblock %}

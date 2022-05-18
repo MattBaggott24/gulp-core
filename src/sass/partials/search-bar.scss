@@ -5,7 +5,7 @@
 	display: flex;
 	gap: 2.4rem;
 
-	max-width: 140rem;
+	white-space: nowrap;
 
 	align-items: center;
 	justify-content: center;
@@ -14,12 +14,11 @@
 
 	position: absolute;
 
-	top: 9.5%;
 	left: 50%;
-	transform: translateX(-50%);
+	transform: translate(-50%, -50%);
 
 	&__srch-header {
-		font-size: 3.2rem;
+		font-size: 2.4rem;
 		font-weight: 600;
 		color: #fff;
 	}
@@ -30,10 +29,20 @@
 	}
 
 	&__input {
-		height: 3.2rem;
+		height: 2.4rem;
 		width: 32rem;
 		border: none;
 		padding: 1.2rem;
 		font-size: 1.8rem;
+	}
+}
+
+@media (max-width: 900px) {
+	.srch-bar {
+		flex-direction: column;
+	}
+
+	.option-section {
+		padding-top: 20rem;
 	}
 }

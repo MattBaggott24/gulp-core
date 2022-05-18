@@ -1,0 +1,55 @@
+.option-section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 7.2rem 3.2rem 4.8rem 3.2rem;
+	gap: 3.2rem;
+
+	background-color: $form-background;
+	text-align: center;
+}
+
+.subheader {
+	font-size: 2.4rem;
+	color: $primary-text;
+}
+
+.options {
+	flex: 1;
+	&__option {
+		display: flex;
+		flex-direction: column;
+		gap: 2.4rem;
+		align-items: center;
+
+		padding: 3.6rem;
+
+		color: $secondary-text;
+		font-size: 1.8rem;
+		text-align: center;
+
+		background-color: #fff;
+
+		&__text {
+			flex: 1;
+		}
+
+		&__icon {
+			fill: $primary-green;
+			height: 7.2rem;
+			width: 7.2rem;
+			justify-self: center;
+		}
+
+		&__btn {
+			align-self: center;
+			justify-self: end;
+			width: 20rem;
+		}
+	}
+}
+
+.flip {
+	transform: rotateY(180deg);
+}
