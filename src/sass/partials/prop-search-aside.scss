@@ -1,0 +1,73 @@
+.small-selection {
+	width: 16rem;
+}
+.large-selection {
+	width: 24rem;
+}
+
+.search-section {
+	background-color: $background-green;
+	color: #fff;
+	padding: 3.2rem;
+
+	display: flex;
+	flex-direction: column;
+	gap: 2.2rem;
+
+	width: 16vw;
+
+	// flex: 1;
+
+	font-size: 1.6rem;
+
+	align-self: flex-start;
+
+	label,
+	p {
+		font-weight: 600;
+		white-space: nowrap;
+	}
+}
+
+.buy-rent {
+	display: flex;
+	flex-direction: column;
+	gap: 1.2rem;
+}
+
+.location {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+
+	&__input {
+		height: 2.4rem;
+		padding: 0.8rem;
+		font-size: 1.6rem;
+	}
+}
+
+.page-container {
+	display: flex;
+	padding: 3.2rem 10%;
+	gap: 7.2rem;
+}
+
+.prop-search {
+	padding: 3.2rem;
+}
+
+.filters {
+	display: inherit;
+	flex-direction: inherit;
+	gap: inherit;
+}
+
+#filter-dropdown {
+	align-self: flex-start;
+	user-select: none;
+}
+
+.filter-icon {
+	transition: all 0.2s;
+}

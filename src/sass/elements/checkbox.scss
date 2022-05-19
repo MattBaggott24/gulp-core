@@ -1,0 +1,58 @@
+.check-contain {
+	justify-self: center;
+	padding: 0.4rem;
+}
+
+.check-contain *,
+.check-contain *::before,
+.check-contain *::after {
+	box-sizing: content-box !important;
+}
+
+.check-contain input {
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+}
+
+.check-contain span {
+	line-height: 1.5;
+	font-size: 1.6rem;
+	font-family: inherit;
+	padding-left: 2.4rem;
+}
+
+.check-contain {
+	display: table;
+	position: relative;
+	padding-left: 1.8rem;
+	cursor: pointer;
+	margin-bottom: 0.5rem;
+}
+
+.check-contain input[type="checkbox"] ~ .check-input {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 3rem;
+	width: 3rem;
+	border: 2px solid rgba(255, 255, 255, 1);
+	border-radius: 0rem;
+}
+
+.check-contain input[type="checkbox"] ~ .check-input::after {
+	content: "";
+	position: absolute;
+	display: none;
+	left: 1rem;
+	top: 0.18rem;
+	width: 1rem;
+	height: 2rem;
+	border: solid rgba(255, 221, 0, 1);
+	border-width: 0 2px 2px 0;
+	transform: rotate(45deg);
+}
+
+.check-contain input:checked ~ .check-input::after {
+	display: block;
+}

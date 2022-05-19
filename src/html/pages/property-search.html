@@ -8,8 +8,9 @@
      search-section -->
 {% block content %}
 <main class="form-bg">
-	<div class="vw65-container">
-		<section class="section prop-search">{% include "../nunjucks/components/prop-search.html" %}</section>
+	<div class="page-container">
+		{% include "../nunjucks/partials/prop-search-aside.html" %}
+		<section class="prop-search">{% include "../nunjucks/components/prop-search.html" %}</section>
 	</div>
 
 	<!-- TODO: aside goes here -->

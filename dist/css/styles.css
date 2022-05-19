@@ -69,6 +69,20 @@ button {
   margin: 0 auto;
 }
 
+.invisible {
+  opacity: 0;
+  visibility: hidden;
+  display: none;
+  height: 0;
+}
+
+.vertical-flex {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  align-items: flex-start;
+}
+
 @media (max-width: 900px) {
   .grid-3cols {
     grid-template-columns: 1fr;
@@ -200,6 +214,112 @@ button {
   font-size: 1.6rem;
   color: #4c4c4c;
   margin-bottom: 0.6rem;
+}
+
+.select-div {
+  position: relative;
+  width: inherit;
+}
+.select-div::after {
+  content: '<>';
+  font: 17px 'Consolas';
+  color: #fd0;
+  top: 50%;
+  transform: rotate(90deg) translateX(-50%);
+  right: 3%;
+  position: absolute;
+}
+.select-div select {
+  appearance: none;
+  display: block;
+  height: 4.2rem;
+  width: inherit;
+  padding: 0.6rem;
+  font-size: 1.6rem;
+  line-height: 1.75;
+  color: #fff;
+  background-color: #006469;
+  background-image: none;
+  border: 1px solid #cccccc;
+  word-break: normal;
+}
+
+.select-container {
+  display: flex;
+  flex-direction: column;
+}
+.select-container label {
+  font-weight: 600;
+  font-size: 1.6rem;
+  color: #4c4c4c;
+  margin-bottom: 0.6rem;
+}
+
+.selector {
+  height: 4.2rem;
+  width: 20rem;
+  font-size: 1.6rem;
+  color: #4c4c4c;
+  padding: 1rem;
+}
+
+.check-contain {
+  justify-self: center;
+  padding: 0.4rem;
+}
+
+.check-contain *,
+.check-contain *::before,
+.check-contain *::after {
+  box-sizing: content-box !important;
+}
+
+.check-contain input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.check-contain span {
+  line-height: 1.5;
+  font-size: 1.6rem;
+  font-family: inherit;
+  padding-left: 2.4rem;
+}
+
+.check-contain {
+  display: table;
+  position: relative;
+  padding-left: 1.8rem;
+  cursor: pointer;
+  margin-bottom: 0.5rem;
+}
+
+.check-contain input[type='checkbox'] ~ .check-input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 3rem;
+  width: 3rem;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 0rem;
+}
+
+.check-contain input[type='checkbox'] ~ .check-input::after {
+  content: '';
+  position: absolute;
+  display: none;
+  left: 1rem;
+  top: 0.18rem;
+  width: 1rem;
+  height: 2rem;
+  border: solid rgb(255, 221, 0);
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.check-contain input:checked ~ .check-input::after {
+  display: block;
 }
 
 .srch-bar {
@@ -547,6 +667,73 @@ button {
   text-decoration: none;
 }
 
+.small-selection {
+  width: 16rem;
+}
+
+.large-selection {
+  width: 24rem;
+}
+
+.search-section {
+  background-color: #006469;
+  color: #fff;
+  padding: 3.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.2rem;
+  width: 16vw;
+  font-size: 1.6rem;
+  align-self: flex-start;
+}
+.search-section label,
+.search-section p {
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.buy-rent {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.location {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.location__input {
+  height: 2.4rem;
+  padding: 0.8rem;
+  font-size: 1.6rem;
+}
+
+.page-container {
+  display: flex;
+  padding: 3.2rem 10%;
+  gap: 7.2rem;
+}
+
+.prop-search {
+  padding: 3.2rem;
+}
+
+.filters {
+  display: inherit;
+  flex-direction: inherit;
+  gap: inherit;
+}
+
+#filter-dropdown {
+  align-self: flex-start;
+  user-select: none;
+}
+
+.filter-icon {
+  transition: all 0.2s;
+}
+
 .logo {
   height: 8.4rem;
   width: 8.4rem;
@@ -786,14 +973,13 @@ button {
   display: flex;
   flex-direction: column;
   gap: 3.2rem;
-  width: 60vw;
+  width: 50vw;
 }
 
 .description {
   display: flex;
   gap: 1.4rem;
   flex-direction: column;
-  margin-bottom: 3.2rem;
 }
 .description__results {
   font-size: 1.6rem;

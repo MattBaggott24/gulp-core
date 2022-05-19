@@ -1,0 +1,47 @@
+.select-div {
+	position: relative;
+	width: inherit;
+	&::after {
+		content: "<>";
+		font: 17px "Consolas";
+		color: $primary-yellow;
+		top: 50%;
+		transform: rotate(90deg) translateX(-50%);
+		right: 3%;
+		position: absolute;
+	}
+
+	select {
+		appearance: none;
+		display: block;
+		height: 4.2rem;
+		width: inherit;
+		padding: 0.6rem;
+		font-size: 1.6rem;
+		line-height: 1.75;
+		color: #fff;
+		background-color: $background-green;
+		background-image: none;
+		border: 1px solid #cccccc;
+		word-break: normal;
+	}
+}
+
+.select-container {
+	display: flex;
+	flex-direction: column;
+
+	label {
+		font-weight: 600;
+		font-size: 1.6rem;
+		color: $secondary-text;
+		margin-bottom: 0.6rem;
+	}
+}
+.selector {
+	height: 4.2rem;
+	width: 20rem;
+	font-size: 1.6rem;
+	color: $secondary-text;
+	padding: 1rem;
+}
