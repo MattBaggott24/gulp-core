@@ -1,0 +1,102 @@
+.equity-loan {
+	width: 80vw;
+	background-color: $background-green;
+	display: flex;
+	justify-content: center;
+	font-size: 1.8rem;
+
+	&__container {
+		max-width: 55vw;
+		display: flex;
+		flex-direction: column;
+		gap: 3.2rem;
+
+		color: #fff;
+		font-size: 1.8rem;
+		padding: 4.8rem;
+
+		align-items: center;
+	}
+}
+
+// HEADERS
+// TODO:: add headers classes
+
+.slider-container {
+	width: 100%;
+
+	display: flex;
+	font-size: 2.2rem;
+	gap: 1.2rem;
+	align-items: center;
+	white-space: nowrap;
+
+	&__slider {
+		width: 100%;
+
+		appearance: none;
+		background-color: $primary-green;
+		height: 5px;
+		border-radius: 100px;
+
+		cursor: grab;
+
+		&::-webkit-slider-thumb {
+			appearance: none;
+			background-color: $primary-yellow;
+			height: 3.6rem;
+			width: 3.6rem;
+			border-radius: 50%;
+		}
+
+		&:active {
+			cursor: grabbing;
+		}
+	}
+}
+
+.price-input {
+	display: flex;
+	align-items: center;
+	gap: 1.2rem;
+
+	&__box {
+		width: 18rem;
+		font-weight: 600;
+		font-size: 2.4rem;
+		color: $price-slider-text;
+		padding: 0.6rem 1.2rem;
+		border: none;
+	}
+}
+
+.radio-container {
+	display: flex;
+	flex-direction: column;
+
+	gap: 2rem;
+}
+
+.yellow {
+	color: $primary-yellow;
+}
+
+.loan-table {
+	font-size: 2.2rem;
+	color: #fff;
+
+	td {
+		padding: 1.2rem 2.4rem;
+	}
+}
+
+.repo-warning {
+	font-weight: 600;
+	font-size: 2.4rem;
+}
+
+.disclaimer-text {
+	display: flex;
+	flex-direction: column;
+	gap: 2.4rem;
+}

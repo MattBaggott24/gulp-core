@@ -1,0 +1,66 @@
+<section class="equity-loan">
+	<div class="equity-loan__container">
+		<h2 class="secondary-header">I want to buy a property, through Help to Buy: Equity Loan for...</h2>
+
+		<div class="slider-container">
+			<p>Min £80,000</p>
+			<input type="range" min="80000" max="600000" value="120000" step="10000" class="slider-container__slider" id="myRange" aria-label="price-slider" />
+			<p>Max £600,000</p>
+		</div>
+
+		<div class="price-input">
+			<label for="price-box">Enter a property price (£) </label>
+			<input type="text" id="price-box" class="price-input__box" />
+		</div>
+
+		<div class="radio-container">
+			<p>Your purchase could be made up of...</p>
+			<div class="horiz-flex">
+				<div class="text-center radios">
+					<input type="radio" class="radios-input" id="outside-radio" name="inside-outside-radio" />
+					<label for="outside-radio">Outside London</label>
+				</div>
+
+				<div class="text-center radios">
+					<input type="radio" class="radios-input" id="inside-radio" name="inside-outside-radio" />
+					<label for="inside-radio">Inside London</label>
+				</div>
+			</div>
+		</div>
+
+		<table class="loan-table">
+			<tr>
+				<td>Deposit</td>
+				<td class="yellow">£000,000</td>
+				<td class="yellow">5%</td>
+			</tr>
+			<tr>
+				<td>Equity Loan</td>
+				<td class="yellow">£000,000</td>
+				<td class="yellow">20%</td>
+			</tr>
+			<tr>
+				<td>Mortgage</td>
+				<td class="yellow">£000,000</td>
+				<td class="yellow">75%</td>
+			</tr>
+		</table>
+
+		<p class="repo-warning">Your house may be repossessed if you do not keep up payments on a mortgage or any other loan secured against it</p>
+
+		<div class="disclaimer-text">
+			<p>
+				These figures are an illustration, to help you understand how Help to Buy: Equity Loan works. They do not represent the amounts you may be able
+				to borrow.
+			</p>
+			<p>
+				&#60;&#60;Organisation name&#62;&#62; is not regulated to provide financial advice. It is important that you seek
+				<a href="#" class="text-link dark-bg"> professional advice</a>
+				from a mortgage advisor or financial advisor, to understand the options available to you based on your individual circumstance.
+			</p>
+			<p>Please note that equity loan rates are diferent for properties purchased inside of London.</p>
+		</div>
+	</div>
+
+	<script src="slider.js" defer></script>
+</section>

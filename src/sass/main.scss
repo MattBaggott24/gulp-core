@@ -6,11 +6,16 @@
 	font-size: 2.4rem;
 	color: grey;
 	background-color: $light-grey-background;
-	border: 2px solid grey;
+	box-shadow: 2px 2px 0 #808080 inset, -2px -2px 0 #808080 inset;
 
 	height: 36rem;
+	max-width: 100vw;
 
 	position: relative;
+}
+
+.container {
+	width: 100%;
 }
 
 .grid {
@@ -22,8 +27,28 @@
 	}
 }
 
+.vw65-container {
+	width: 65vw;
+	margin: 0 auto;
+}
+
+.locked {
+	height: 100%;
+	overflow: hidden;
+}
+
 .full-width {
 	width: calc(100vw - (100vw - 100%));
+}
+
+.horiz-flex {
+	display: flex;
+	gap: 1.2rem;
+	align-items: flex-start;
+}
+
+.center {
+	margin: 0 auto;
 }
 
 @media (max-width: 900px) {

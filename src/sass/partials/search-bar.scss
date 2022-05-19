@@ -5,10 +5,12 @@
 	display: flex;
 	gap: 2.4rem;
 
+	width: 80vw;
+
 	white-space: nowrap;
 
 	align-items: center;
-	justify-content: center;
+	justify-content: space-around;
 
 	font-size: 1.6rem;
 
@@ -30,7 +32,7 @@
 
 	&__input {
 		height: 2.4rem;
-		width: 32rem;
+		width: 20vw;
 		border: none;
 		padding: 1.2rem;
 		font-size: 1.8rem;
@@ -42,7 +44,18 @@
 		flex-direction: column;
 	}
 
-	.option-section {
-		padding-top: 20rem;
+	.section {
+		padding-top: 16rem !important;
+	}
+	// change to margin on image??
+}
+
+@media (max-width: 550px) {
+	.srch-bar__group {
+		flex-direction: column;
+		justify-content: center;
+	}
+	html {
+		font-size: 50%;
 	}
 }

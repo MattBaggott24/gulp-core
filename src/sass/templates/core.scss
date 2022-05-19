@@ -22,12 +22,13 @@
 
 .footer {
 	padding: 6.4rem 3.2rem;
+	padding: 6.4rem 12vh;
 	background-color: $background-green;
 	display: flex;
 	justify-content: center;
+	max-width: 100vw;
 
 	&__container {
-		max-width: 100vw;
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		color: #fff;
@@ -89,6 +90,7 @@
 
 .agent-btn {
 	justify-self: end;
+	align-self: flex-end;
 }
 
 .copyright {

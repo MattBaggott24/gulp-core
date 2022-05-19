@@ -19,7 +19,7 @@ function build() {
 		.src("src/html/pages/*")
 		.pipe(
 			nunjucksRender({
-				path: ["src/html/components"],
+				path: ["src/html/nunjucks"],
 			})
 		)
 		.pipe(prettier())

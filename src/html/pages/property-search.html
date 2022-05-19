@@ -1,0 +1,17 @@
+{% extends "../nunjucks/templates/core.html" %} {% block title %} Property Search {% endblock %}
+
+<!-- prop-search
+        -description-section
+        -sort-section
+        -preview-panel
+        -page-selector
+     search-section -->
+{% block content %}
+<main class="form-bg">
+	<div class="vw65-container">
+		<section class="section prop-search">{% include "../nunjucks/components/prop-search.html" %}</section>
+	</div>
+
+	<!-- TODO: aside goes here -->
+</main>
+{% endblock %}

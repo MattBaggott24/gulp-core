@@ -1,0 +1,19 @@
+.select-container {
+	display: flex;
+	flex-direction: column;
+
+	&__selector {
+		height: 4.2rem;
+		width: 20rem;
+		font-size: 1.6rem;
+		color: $secondary-text;
+		padding: 1rem;
+	}
+
+	label {
+		font-weight: 600;
+		font-size: 1.6rem;
+		color: $secondary-text;
+		margin-bottom: 0.6rem;
+	}
+}
