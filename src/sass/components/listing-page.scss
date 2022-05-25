@@ -1,0 +1,41 @@
+.main-section {
+	margin: 0 auto;
+	width: 90vw;
+	gap: 3.2rem;
+	padding: 1.2rem;
+}
+
+@media (min-width: 600px) {
+	.aside-section {
+		display: grid;
+		grid-row: 3;
+		grid-template-columns: 1fr 1fr;
+	}
+
+	.contact {
+		grid-row: 2;
+	}
+
+	.register-btn {
+		align-self: flex-end;
+	}
+	.main-section {
+		padding: 3.2rem;
+	}
+}
+
+@media (min-width: 900px) {
+	.main-section {
+		width: 55vw;
+		margin: 0;
+	}
+	.page {
+		flex-direction: row-reverse;
+		justify-content: center;
+	}
+	.aside-section {
+		display: flex;
+		align-self: flex-start;
+		flex-direction: column;
+	}
+}

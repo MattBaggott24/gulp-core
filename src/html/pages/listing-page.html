@@ -1,9 +1,14 @@
 {% extends "../nunjucks/templates/core.html" %} {% block title %}Listing {% endblock %}
 
 <!-- aside section (partials)-->
-{% block content %} {% include "../nunjucks/partials/listing-page-aside.html" %}
-
-<!-- images with the carousel of images (partials)-->
-{% include "../nunjucks/partials/listing-carousel.html" %} {% endblock %}
+{% block content %}
+<div class="page vertical-flex">
+	{% include "../nunjucks/partials/listing-page-aside.html" %}
+	<section class="main-section vertical-flex">
+		<!-- images with the carousel of images (partials)-->
+		{% include "../nunjucks/partials/listing-carousel.html" %} {% include "../nunjucks/partials/listing-tabs.html" %}
+	</section>
+</div>
+{% endblock %}
 
 <!-- tabs (partials)-->

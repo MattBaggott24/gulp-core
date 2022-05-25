@@ -1,9 +1,9 @@
 .aside-section {
 	font-size: 1.8rem;
 
-	// width: 60vw;
-
-	padding: 0 3.2rem 3.2rem 3.2rem;
+	padding: 3.2rem;
+	justify-self: center;
+	align-self: center;
 
 	span {
 		color: $primary-text;
@@ -40,7 +40,7 @@
 	align-self: stretch;
 	background-color: $light-grey-background;
 	height: 8rem;
-	width: 100%;
+	// width: 100%;
 
 	display: flex;
 	align-items: center;
@@ -80,4 +80,5 @@
 	color: #fff;
 	padding: 0.8rem 2.8rem;
 	background-color: $share-background;
+	justify-self: start;
 }

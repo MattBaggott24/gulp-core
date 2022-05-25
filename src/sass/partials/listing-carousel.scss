@@ -1,38 +1,35 @@
-.carousel-img {
-	margin: 0 auto;
-	// TODO: remove and center with flex
-	content: "carsouel";
-
-	background-color: rgb(233, 233, 233);
-	border: 1px solid grey;
-	height: 30vh;
-	width: 80vw;
+.carousel {
 	display: flex;
 	align-items: center;
-	justify-content: center;
-	color: rgb(167, 167, 167);
-	text-transform: uppercase;
-	font-weight: 600;
+	justify-items: center;
+	flex-direction: column;
+	gap: 1.2rem;
+	width: inherit;
 
-	filter: saturate(10);
+	&__img {
+		position: relative;
+
+		display: flex;
+		gap: 1.2rem;
+
+		align-items: center;
+
+		width: inherit;
+	}
+
+	&__img-container {
+		display: grid;
+		gap: 1.2rem;
+		grid-template-columns: repeat(6, 1fr);
+	}
 }
 
-.saturate20 {
-	filter: saturate(20);
-}
-.saturate30 {
-	filter: saturate(30);
-}
-.saturate40 {
-	filter: saturate(40);
-}
-.saturate50 {
-	filter: saturate(50);
+#featured {
+	width: inherit;
 }
 
 .thumbnail {
-	width: 16vw;
-	height: 6vh;
+	height: 8rem;
 	cursor: pointer;
 	opacity: 0.6;
 
@@ -43,4 +40,27 @@
 
 .active {
 	opacity: 1;
+}
+
+.chevron {
+	height: 100%;
+	background-color: $form-background;
+
+	z-index: 1;
+
+	cursor: pointer;
+}
+
+.carousel-icon {
+	height: 5.2rem;
+	width: 5.2rem;
+	fill: $primary-green;
+}
+
+.right-chevron {
+	order: 3;
+}
+
+.no-overflow {
+	overflow: hidden;
 }

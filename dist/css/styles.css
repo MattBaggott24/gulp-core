@@ -371,10 +371,6 @@ button {
     flex-direction: column;
     justify-content: center;
   }
-
-  html {
-    font-size: 50%;
-  }
 }
 .nav {
   background-color: #006469;
@@ -764,7 +760,9 @@ button {
 
 .aside-section {
   font-size: 1.8rem;
-  padding: 0 3.2rem 3.2rem 3.2rem;
+  padding: 3.2rem;
+  justify-self: center;
+  align-self: center;
 }
 .aside-section span {
   color: #006469;
@@ -798,7 +796,6 @@ button {
   align-self: stretch;
   background-color: #e6e6e6;
   height: 8rem;
-  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -832,43 +829,36 @@ button {
   color: #fff;
   padding: 0.8rem 2.8rem;
   background-color: #a7cf4a;
+  justify-self: start;
 }
 
-.carousel-img {
-  margin: 0 auto;
-  content: 'carsouel';
-  background-color: rgb(233, 233, 233);
-  border: 1px solid grey;
-  height: 30vh;
-  width: 80vw;
+.carousel {
   display: flex;
   align-items: center;
-  justify-content: center;
-  color: rgb(167, 167, 167);
-  text-transform: uppercase;
-  font-weight: 600;
-  filter: saturate(10);
+  justify-items: center;
+  flex-direction: column;
+  gap: 1.2rem;
+  width: inherit;
+}
+.carousel__img {
+  position: relative;
+  display: flex;
+  gap: 1.2rem;
+  align-items: center;
+  width: inherit;
+}
+.carousel__img-container {
+  display: grid;
+  gap: 1.2rem;
+  grid-template-columns: repeat(6, 1fr);
 }
 
-.saturate20 {
-  filter: saturate(20);
-}
-
-.saturate30 {
-  filter: saturate(30);
-}
-
-.saturate40 {
-  filter: saturate(40);
-}
-
-.saturate50 {
-  filter: saturate(50);
+#featured {
+  width: inherit;
 }
 
 .thumbnail {
-  width: 16vw;
-  height: 6vh;
+  height: 8rem;
   cursor: pointer;
   opacity: 0.6;
 }
@@ -878,6 +868,75 @@ button {
 
 .active {
   opacity: 1;
+}
+
+.chevron {
+  height: 100%;
+  background-color: #f2f2f2;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.carousel-icon {
+  height: 5.2rem;
+  width: 5.2rem;
+  fill: #009292;
+}
+
+.right-chevron {
+  order: 3;
+}
+
+.no-overflow {
+  overflow: hidden;
+}
+
+.description-tabs {
+  margin: 0 auto;
+}
+
+.tab-container {
+  width: inherit;
+  font-size: 2.2rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.tab {
+  border: none;
+  display: flex;
+  justify-content: center;
+  background-color: #e6e6e6;
+  padding: 1.2rem;
+  font-size: 1.8rem;
+}
+
+.currentTab {
+  text-decoration: none;
+  font-weight: 600;
+  background-color: #fff;
+  box-shadow: 2px 2px 0 #009292 inset, 2px 0 0 #009292, 1px 4px 0 -1px #fff;
+  outline: none;
+}
+.currentTab:hover {
+  outline: none;
+}
+
+.tab-content {
+  padding: 3.6rem;
+  font-size: 1.6rem;
+  border: 2px solid #009292;
+  width: inherit;
+  color: #4c4c4c;
+  line-height: 1.3;
+  letter-spacing: 0.05rem;
+}
+.tab-content__content {
+  display: none;
+}
+.tab-content__current {
+  display: block;
+  background-color: #fff;
 }
 
 .logo {
@@ -1029,10 +1088,6 @@ button {
   transform: rotateY(180deg);
 }
 
-.container {
-  padding-top: 7.2rem !important;
-}
-
 .story {
   display: flex;
   flex-direction: column;
@@ -1163,5 +1218,48 @@ button {
   .sort {
     flex-direction: column;
     gap: 1.2rem;
+  }
+}
+.main-section {
+  margin: 0 auto;
+  width: 90vw;
+  gap: 3.2rem;
+  padding: 1.2rem;
+}
+
+@media (min-width: 600px) {
+  .aside-section {
+    display: grid;
+    grid-row: 3;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .contact {
+    grid-row: 2;
+  }
+
+  .register-btn {
+    align-self: flex-end;
+  }
+
+  .main-section {
+    padding: 3.2rem;
+  }
+}
+@media (min-width: 900px) {
+  .main-section {
+    width: 55vw;
+    margin: 0;
+  }
+
+  .page {
+    flex-direction: row-reverse;
+    justify-content: center;
+  }
+
+  .aside-section {
+    display: flex;
+    align-self: flex-start;
+    flex-direction: column;
   }
 }
