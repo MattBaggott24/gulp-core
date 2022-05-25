@@ -1,0 +1,83 @@
+.aside-section {
+	font-size: 1.8rem;
+
+	// width: 60vw;
+
+	padding: 0 3.2rem 3.2rem 3.2rem;
+
+	span {
+		color: $primary-text;
+		font-weight: 600;
+	}
+}
+
+.asking-price {
+	gap: 0.2rem;
+
+	&__price {
+		color: $primary-text;
+		font-weight: 600;
+		font-size: 2.4rem;
+	}
+}
+.charge-share {
+	white-space: nowrap;
+}
+
+// FIXME:
+.contact {
+	margin-top: 1.2rem;
+	gap: 0.4rem;
+
+	&__agent {
+		font-size: 2.2rem;
+		color: $primary-text;
+		font-weight: 600;
+	}
+}
+
+.img-placeholder {
+	align-self: stretch;
+	background-color: $light-grey-background;
+	height: 8rem;
+	width: 100%;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: $secondary-text;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+.details {
+	a {
+		color: inherit;
+	}
+	a[href="mailto"] {
+		text-decoration: underline;
+	}
+}
+
+.f-d {
+	&__item {
+		display: flex;
+		align-items: center;
+	}
+
+	&__icon {
+		height: 2.4rem;
+		width: 2.4rem;
+		fill: $primary-green;
+	}
+}
+
+.share {
+	font-size: 1.2rem;
+	display: flex;
+	align-items: center;
+	gap: 1.2rem;
+	color: #fff;
+	padding: 0.8rem 2.8rem;
+	background-color: $share-background;
+}

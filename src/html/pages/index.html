@@ -1,21 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="css/styles.css" />
-		<title>Document</title>
-	</head>
-	<body>
-		<div>
-			<ul>
-				<li>non-template1</li>
-				<li>non-template2</li>
-				<li>non-template3</li>
-			</ul>
-			<a href="home-page.html">Home Page</a>
-			{% include "../nunjucks/partials/nav.html" %}
-		</div>
-	</body>
-</html>
+{% extends "../nunjucks/templates/core.html" %} {% block content %}
+<div class="block">test</div>
+{% endblock %}

@@ -1,32 +1,22 @@
 .nav {
-	display: flex;
-	align-items: center;
-	justify-content: space-around;
-	position: relative;
-
-	// max-width: 100%;
-
-	height: 7.2rem;
-	padding: 0.8rem 5%;
-
 	background-color: $background-green;
+	display: flex;
+	gap: 1.2rem;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 8%;
 
 	&__list {
 		display: flex;
-		align-items: center;
 		gap: 3.6rem;
-
 		list-style: none;
-
-		padding: 3.2rem;
+		flex: 1;
 	}
 
 	&__link {
 		font-size: 2rem;
 		color: #fff;
 		font-weight: 600;
-		display: inline-block;
-		padding: 0.5rem 0;
 
 		&:hover {
 			color: $primary-yellow;
@@ -39,45 +29,65 @@
 	color: $primary-yellow;
 }
 
-@media (max-width: 900px) {
+.mobile-menu {
+	display: block !important;
+	z-index: 10;
+	background-color: #fff;
+}
+.nav__list {
+	position: absolute;
+
+	top: 0;
+	left: 0;
+
+	width: 100vw;
+	height: 100vh;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+	pointer-events: none;
+	visibility: hidden;
+
+	transition: all 0.2s ease-in-out;
+	background-color: $background-green;
+}
+
+.mobile-open {
+	z-index: 1;
+	opacity: 0.99;
+	visibility: visible;
+	pointer-events: all;
+	padding: 3.2rem 0;
+}
+
+@media (min-width: 900px) {
 	.mobile-menu {
-		display: block !important;
-		z-index: 10;
-		background-color: #fff;
-	}
-
-	.nav__list {
-		background-color: $background-green;
-		position: absolute;
-		top: 0;
-		// left: 53%;
-		// transform: translateX(-5%);
-
-		width: 100vw;
-		height: 100vh;
-
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-
-		opacity: 0;
-
-		pointer-events: none;
-		z-index: 0;
 		visibility: hidden;
-
-		transition: all 0.2s ease-in-out;
+		pointer-events: none;
 	}
-
-	.mobile-open {
-		z-index: 1;
-		opacity: 0.99;
+	.nav__list {
+		flex-direction: row;
 		visibility: visible;
+		height: fit-content;
+		background-color: transparent;
 		pointer-events: all;
+		position: static;
+		flex: 1;
+	}
+	.logo {
+		padding: 0;
+	}
+	.nav {
+		padding: 0;
 	}
 }
 
-.visible {
-	display: block;
+@media (min-width: 1200px) {
+	.nav {
+		justify-content: space-around;
+		padding: 0 10%;
+	}
 }

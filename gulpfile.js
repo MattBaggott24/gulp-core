@@ -50,13 +50,13 @@ function browsersyncReload(cb) {
 }
 
 function buildImage() {
-	return gulp.src("src/images/*").pipe(imagemin()).pipe(gulp.dest("./dist/images"));
+	return gulp.src("src/images/**/*").pipe(imagemin()).pipe(gulp.dest("./dist/images"));
 }
 
 function watchTask() {
 	watch("src/html/**/*.html", series(build, browsersyncReload));
 	watch("src/sass/**/*.scss", series(style, browsersyncReload));
-	watch("src/images/*", series(buildImage, browsersyncReload));
+	watch("src/images/**/*", series(buildImage, browsersyncReload));
 	watch("src/js/*", series(scripts, browsersyncReload));
 }
 

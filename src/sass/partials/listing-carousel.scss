@@ -1,0 +1,46 @@
+.carousel-img {
+	margin: 0 auto;
+	// TODO: remove and center with flex
+	content: "carsouel";
+
+	background-color: rgb(233, 233, 233);
+	border: 1px solid grey;
+	height: 30vh;
+	width: 80vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: rgb(167, 167, 167);
+	text-transform: uppercase;
+	font-weight: 600;
+
+	filter: saturate(10);
+}
+
+.saturate20 {
+	filter: saturate(20);
+}
+.saturate30 {
+	filter: saturate(30);
+}
+.saturate40 {
+	filter: saturate(40);
+}
+.saturate50 {
+	filter: saturate(50);
+}
+
+.thumbnail {
+	width: 16vw;
+	height: 6vh;
+	cursor: pointer;
+	opacity: 0.6;
+
+	&:hover {
+		opacity: 1;
+	}
+}
+
+.active {
+	opacity: 1;
+}

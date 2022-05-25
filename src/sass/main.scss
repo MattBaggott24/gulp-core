@@ -32,10 +32,10 @@
 	margin: 0 auto;
 }
 
-.locked {
-	height: 100%;
-	overflow: hidden;
-}
+// .locked {
+// 	height: 100%;
+// 	overflow: hidden;
+// }
 
 .full-width {
 	width: calc(100vw - (100vw - 100%));
@@ -69,4 +69,8 @@
 	.grid-3cols {
 		grid-template-columns: 1fr;
 	}
+}
+
+.block {
+	height: 65vh;
 }
