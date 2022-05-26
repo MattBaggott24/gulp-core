@@ -1,8 +1,17 @@
 {% extends "../nunjucks/templates/core.html" %} {% block title %} News & Events {% endblock %} {% block content %}
-<!-- News things go here (partial)-->
 
-<!-- newsletter from partials -->
-{% include "../nunjucks/partials/newsletter.html" %}
+<section class="news-container">
+	<h1 class="primary-header">News and Events</h1>
 
-<!-- pageination from partials -->
-{% include "../nunjucks/partials/page-select.html" %} {% endblock %}
+	<!-- News things go here (partial)-->
+	<ul class="news">
+		{% include "../nunjucks/components/news-list.html" %}
+	</ul>
+
+	<!-- pageination from partials -->
+	{% include "../nunjucks/partials/page-select.html" %}
+
+	<!-- newsletter from partials -->
+	{% include "../nunjucks/partials/newsletter.html" %}
+</section>
+{% endblock %}
