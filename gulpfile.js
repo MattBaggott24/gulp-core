@@ -7,8 +7,11 @@ const prettier = require("gulp-prettier");
 
 const sass = require("gulp-sass")(require("sass"));
 
-function buildImages() {
-	return gulp.src("src/images/*").pipe(imagemin()).pipe(gulp.dest("dist/images"));
+function scripts() {
+	return gulp
+		.src("src/js/*")
+		.pipe(prettier({ singleQuote: true }))
+		.pipe(gulp.dest("./dist/js"));
 }
 
 function build() {
@@ -16,18 +19,19 @@ function build() {
 		.src("src/html/pages/*")
 		.pipe(
 			nunjucksRender({
-				path: ["src/html/components"],
+				path: ["src/html/nunjucks"],
 			})
 		)
 		.pipe(prettier())
-		.pipe(gulp.dest("dist"));
+		.pipe(gulp.dest("./dist"));
 }
+
 function style() {
 	return gulp
 		.src("./src/sass/styles.scss")
 		.pipe(sass().on("error", sass.logError))
 		.pipe(prettier({ singleQuote: true }))
-		.pipe(gulp.dest("./dist/css"))
+		.pipe(gulp.dest("./dist"))
 		.pipe(browserSync.stream());
 }
 
@@ -45,10 +49,19 @@ function browsersyncReload(cb) {
 	cb();
 }
 
-function watchTask() {
-	watch("*src/html/**/*.html", series(build, browsersyncReload));
-	watch("src/sass/**/*.scss", series(style, browsersyncReload));
-	watch("src/images/*", series(buildImages, browsersyncReload));
+function buildImage() {
+	return gulp.src("src/images/**/*").pipe(imagemin()).pipe(gulp.dest("./dist/images"));
 }
 
-exports.default = series(style, build, buildImages, browsersyncServer, watchTask);
+function watchTask() {
+	watch("src/html/**/*.html", series(build, browsersyncReload));
+	watch("src/sass/**/*.scss", series(style, browsersyncReload));
+	watch("src/images/**/*", series(buildImage, browsersyncReload));
+	watch("src/js/*", series(scripts, browsersyncReload));
+}
+
+exports.style = style;
+exports.build = build;
+exports.buildImage = buildImage;
+exports.scripts = scripts;
+exports.default = series(style, build, buildImage, scripts, browsersyncServer, watchTask);

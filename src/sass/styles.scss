@@ -10,8 +10,6 @@ html {
 @import "variables.scss";
 @import "elements/elements.scss";
 @import "partials/partials.scss";
+@import "templates/templates.scss";
+@import "components/components.scss";
 
-ul {
-	font-size: 3rem;
-	background-color: orangered;
-}
