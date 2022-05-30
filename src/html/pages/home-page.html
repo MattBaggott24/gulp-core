@@ -1,11 +1,15 @@
-{% extends "../nunjucks/templates/core.html" %} {% block title %} Home Page {% endblock %} {% block content %}
+{% extends "../nunjucks/templates/core.html" %} {% block title %} Home Page {% endblock %}
+<!-- nav -->
+
+<!-- content -->
+{% block content %}
 
 <main>
 	<div class="placeholder-img full-width">img goes here</div>
 
 	{% include "../nunjucks/partials/search-bar.html" %}
 
-	<section class="section form-bg">{% include "../nunjucks/components/home-page-options.html" %}</section>
+	<section class="section form-bg top-padding-large">{% include "../nunjucks/components/home-page-options.html" %}</section>
 
 	<section class="section">{% include "../nunjucks/components/home-page-stories.html" %}</section>
 

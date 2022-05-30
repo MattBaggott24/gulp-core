@@ -1,15 +1,9 @@
 <ul class="nav__list" id="nav__list">
-	<li>
-		<a id="nav1" class="nav__link active-link" href="home-page.html">Link One</a>
-	</li>
-	<li><a id="nav2" class="nav__link" href="property-search.html">Link Two</a></li>
-	<li>
-		<a id="nav3" class="nav__link" href="listing-page.html">Link Three</a>
-	</li>
-	<li><a id="nav4" class="nav__link" href="news-and-events.html">Link Four</a></li>
-	<li>
-		<a id="nav5" class="nav__link" href="application-form.html">Link Five</a>
-	</li>
+	<li>{% block nav1 %}<a id="nav1" class="nav__link" href="home-page.html">Link One</a>{% endblock %}</li>
+	<li>{% block nav2 %}<a id="nav2" class="nav__link" href="property-search.html">Link Two</a>{% endblock %}</li>
+	<li>{% block nav3 %}<a id="nav3" class="nav__link" href="listing-page.html">Link Three</a>{% endblock %}</li>
+	<li>{% block nav4 %}<a id="nav4" class="nav__link" href="news-and-events.html">Link Four</a>{% endblock %}</li>
+	<li>{% block nav5 %}<a id="nav5" class="nav__link" href="application-form.html">Link Five</a>{% endblock %}</li>
 	<li>
 		<button class="btn sign-in-btn">Sign In</button>
 	</li>

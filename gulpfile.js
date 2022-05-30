@@ -11,7 +11,7 @@ function scripts() {
 	return gulp
 		.src("src/js/*")
 		.pipe(prettier({ singleQuote: true }))
-		.pipe(gulp.dest("dist"));
+		.pipe(gulp.dest("./dist/js"));
 }
 
 function build() {
@@ -23,7 +23,7 @@ function build() {
 			})
 		)
 		.pipe(prettier())
-		.pipe(gulp.dest("dist"));
+		.pipe(gulp.dest("./dist"));
 }
 
 function style() {
@@ -31,7 +31,7 @@ function style() {
 		.src("./src/sass/styles.scss")
 		.pipe(sass().on("error", sass.logError))
 		.pipe(prettier({ singleQuote: true }))
-		.pipe(gulp.dest("./dist/css"))
+		.pipe(gulp.dest("./dist"))
 		.pipe(browserSync.stream());
 }
 
