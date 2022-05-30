@@ -1,11 +1,11 @@
 .srch-bar {
 	background-color: $background-green;
-	padding: 2.4rem 6.4rem;
+	padding: 2.4rem 4.8rem;
 
 	display: flex;
-	gap: 2.4rem;
+	flex-direction: column;
 
-	width: 80vw;
+	gap: 2.4rem;
 
 	white-space: nowrap;
 
@@ -27,35 +27,36 @@
 
 	&__group {
 		display: flex;
+		flex-direction: column;
 		gap: 0.8rem;
 	}
 
 	&__input {
 		height: 2.4rem;
-		width: 20vw;
+		width: 90%;
 		border: none;
 		padding: 1.2rem;
 		font-size: 1.8rem;
 	}
 }
 
-@media (max-width: 900px) {
-	.srch-bar {
-		flex-direction: column;
-	}
-
-	.section {
-		padding-top: 16rem !important;
-	}
-	// change to margin on image??
+.section {
+	padding-top: 16rem !important;
 }
 
-@media (max-width: 550px) {
-	.srch-bar__group {
-		flex-direction: column;
-		justify-content: center;
+@media (min-width: 900px) {
+	.srch-bar {
+		flex-direction: row;
+
+		&__group {
+			flex-direction: row;
+		}
+
+		input {
+			width: 30vw;
+		}
 	}
-	// html {
-	// 	font-size: 50%;
-	// }
+	.section {
+		padding-top: 7.2rem !important;
+	}
 }

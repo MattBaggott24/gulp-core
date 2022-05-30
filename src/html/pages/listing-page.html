@@ -2,12 +2,19 @@
 
 <!-- aside section (partials)-->
 {% block content %}
-<div class="page vertical-flex">
-	{% include "../nunjucks/partials/listing-page-aside.html" %}
-	<section class="main-section vertical-flex">
-		<!-- images with the carousel of images (partials)-->
-		{% include "../nunjucks/partials/listing-carousel.html" %} {% include "../nunjucks/partials/listing-tabs.html" %}
-	</section>
+<div class="listing">
+	<div class="page vertical-flex">
+		{% include "../nunjucks/partials/listing-page-aside.html" %}
+		<section class="main-section vertical-flex">
+			<!-- images with the carousel of images (partials)-->
+			<div class="header-text vertical-flex">
+				<p><a class="text-link" href="property-search.html">Back to search results</a></p>
+				<h1 class="primary-heading green-heading">98 Arundel Drive</h1>
+				<h2 class="secondary-heading grey-heading">Barringham, Leicestershire</h2>
+			</div>
+			{% include "../nunjucks/partials/listing-carousel.html" %} {% include "../nunjucks/partials/listing-tabs.html" %}
+		</section>
+	</div>
 </div>
 {% endblock %}
 

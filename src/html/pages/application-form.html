@@ -1,0 +1,12 @@
+{% extends "../nunjucks/templates/core.html" %} {% block title %} Application Form {% endblock %} {% block content %}
+<section class="form-bg vertical-flex top-padding">
+	<h1 class="primary-heading green-heading center">Application home ownership application</h1>
+	<!-- list of form pages with button from (partials)-->
+	<div class="form-page">
+		{% include "../nunjucks/partials/selection-list.html" %}
+		<!-- the form itself from (partials) -->
+		<div class="form-container">{% include "../nunjucks/partials/application-form-form.html" %}</div>
+	</div>
+</section>
+
+{% endblock %}

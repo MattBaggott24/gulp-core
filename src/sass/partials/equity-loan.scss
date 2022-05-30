@@ -26,6 +26,7 @@
 	width: 100%;
 
 	display: flex;
+	flex-direction: column;
 	font-size: 2.2rem;
 	gap: 1.2rem;
 	align-items: center;
@@ -53,6 +54,13 @@
 			cursor: grabbing;
 		}
 	}
+}
+
+.radios-container {
+	display: flex;
+	flex-direction: column;
+	gap: 1.2rem;
+	white-space: nowrap;
 }
 
 .price-input {
@@ -99,4 +107,13 @@
 	display: flex;
 	flex-direction: column;
 	gap: 2.4rem;
+}
+
+@media (min-width: 900px) {
+	.slider-container {
+		flex-direction: row;
+	}
+	.radios-container {
+		flex-direction: row;
+	}
 }

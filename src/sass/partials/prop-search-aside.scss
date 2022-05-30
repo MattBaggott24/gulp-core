@@ -1,8 +1,10 @@
 .small-selection {
-	width: 16rem;
+	max-width: 16rem;
+	width: 100%;
 }
 .large-selection {
-	width: 24rem;
+	// max-width: 24rem;
+	width: 100%;
 }
 
 .search-section {
@@ -14,13 +16,15 @@
 	flex-direction: column;
 	gap: 2.2rem;
 
-	width: 16vw;
+	// width: 16vw;
 
 	// flex: 1;
 
 	font-size: 1.6rem;
 
 	align-self: flex-start;
+
+	align-self: center;
 
 	label,
 	p {
@@ -49,18 +53,29 @@
 
 .page-container {
 	display: flex;
+	flex-direction: column;
 	padding: 3.2rem 10% 0 10%;
 	gap: 7.2rem;
+
+	justify-content: center;
+	align-items: center;
 }
 
 .prop-search {
 	padding: 3.2rem;
+	width: 75vw;
 }
 
+// .filters {
+// 	display: inherit;
+// 	flex-direction: inherit;
+// 	gap: inherit;
+// }
+
 .filters {
-	display: inherit;
-	flex-direction: inherit;
-	gap: inherit;
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
+	gap: 1.2rem;
 }
 
 #filter-dropdown {
@@ -68,9 +83,41 @@
 	user-select: none;
 	display: flex;
 	align-items: center;
+	cursor: pointer;
 }
 
 .filter-icon {
 	height: 2.4rem;
 	width: 2.4rem;
+}
+
+.must-have {
+	padding-top: 3.2rem;
+	display: flex;
+	gap: 1.2rem;
+}
+
+@media (min-width: 500px) {
+	.filters {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+
+@media (min-width: 900px) {
+	.page-container {
+		flex-direction: row;
+	}
+	.filters {
+		display: inherit;
+		flex-direction: inherit;
+		gap: inherit;
+	}
+	.search-section {
+		align-self: flex-start;
+		width: 15vw;
+	}
+	.must-have {
+		flex-direction: column;
+		padding: 0;
+	}
 }

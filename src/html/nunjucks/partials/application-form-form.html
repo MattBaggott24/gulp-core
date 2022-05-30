@@ -1,0 +1,124 @@
+<form class="form">
+	<h2 class="secondary-heading">1. Scheme Selection</h2>
+
+	<div class="s-j">
+		<p class="s-j__header">Single or Joint application</p>
+		<div class="s-j__container">
+			<div class="radios text-center">
+				<input type="radio" id="single" value="Single" name="s-j" class="radios-input application-radio" />
+				<label for="single">Single</label>
+			</div>
+
+			<div class="radios text-center">
+				<input type="radio" id="joint" value="Joint" name="s-j" class="radios-input application-radio" />
+				<label for="joint">Joint</label>
+			</div>
+		</div>
+	</div>
+
+	<div class="select-container">
+		<label for="">Select a scheme</label>
+		<select name="scheme" id="scheme" class="scheme-select" aria-label="Select a Scheme" required>
+			<option value="#">&nbsp;</option>
+		</select>
+	</div>
+	<div class="select-container">
+		<label for="">Developer or Housing Association</label>
+		<select name="developer-or-housing" id="developer-or-housing" class="scheme-select" aria-label="developer or housing Association" required>
+			<option value="#">&nbsp;</option>
+			<option value="#">Developer</option>
+			<option value="#">Housing Association</option>
+		</select>
+	</div>
+	<div class="select-container">
+		<label for="">Development (optional)</label>
+		<select name="development" id="development" class="scheme-select" aria-label="Development" required>
+			<option value="#">&nbsp;</option>
+		</select>
+	</div>
+
+	<div class="reasons">
+		<p class="scheme-header">Reason for application (select all that apply)</p>
+
+		<div class="checkboxes">
+			<label class="check-contain">
+				<span>I don't want to give a reason</span>
+				<input type="checkbox" />
+				<div class="check-input"></div>
+			</label>
+			<label class="check-contain">
+				<span>First time buyer</span>
+				<input type="checkbox" />
+				<div class="check-input"></div>
+			</label>
+			<label class="check-contain">
+				<span>Unable to purchase without assistance</span>
+				<input type="checkbox" />
+				<div class="check-input"></div>
+			</label>
+			<label class="check-contain">
+				<span>Relationship Breakdown</span>
+				<input type="checkbox" />
+				<div class="check-input"></div>
+			</label>
+			<label class="check-contain">
+				<span>Over 55 and living in unsuitable accommodation</span>
+				<input type="checkbox" />
+				<div class="check-input"></div>
+			</label>
+			<label class="check-contain">
+				<span>Other reason</span>
+				<input type="checkbox" />
+				<div class="check-input"></div>
+			</label>
+		</div>
+	</div>
+
+	<div class="select-container">
+		<label for="">Property type</label>
+		<select name="property-type" id="property-type" class="scheme-select" aria-label="property type" required>
+			<option value="#">&nbsp;</option>
+		</select>
+	</div>
+
+	<div action="#" class="bedrooms">
+		<div class="radios">
+			<input type="radio" id="1" name="bedrooms" value="1" class="application-radio radios-input" />
+			<label for="1">1</label>
+		</div>
+
+		<div class="radios">
+			<input type="radio" id="2" name="bedrooms" value="2" class="application-radio radios-input" />
+			<label for="2">2</label>
+		</div>
+
+		<div class="radios">
+			<input type="radio" id="3" name="bedrooms" value="3" class="application-radio radios-input" />
+			<label for="3">3</label>
+		</div>
+
+		<div class="radios">
+			<input type="radio" id="4" name="bedrooms" value="4" class="application-radio radios-input" />
+			<label for="4">4</label>
+		</div>
+
+		<div class="radios">
+			<input type="radio" id="5" name="bedrooms" value="5" class="application-radio radios-input" />
+			<label for="5">5</label>
+		</div>
+
+		<div class="radios">
+			<input type="radio" id="6+" name="bedrooms" value="6+" class="application-radio radios-input" />
+			<label for="6+">6+</label>
+		</div>
+	</div>
+
+	<div class="select-container">
+		<label for="">Which Local Authority Area would you prefer to live in?</label>
+		<select name="area" id="area" class="scheme-select" aria-label="Which local authority area">
+			<option value="#">&nbsp;</option>
+		</select>
+	</div>
+
+	<button class="btn primary-btn next-btn">Next</button>
+</form>

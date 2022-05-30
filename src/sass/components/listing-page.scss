@@ -5,6 +5,10 @@
 	padding: 1.2rem;
 }
 
+.page {
+	flex-direction: column-reverse;
+}
+
 @media (min-width: 600px) {
 	.aside-section {
 		display: grid;

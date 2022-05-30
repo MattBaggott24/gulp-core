@@ -1,0 +1,48 @@
+.form-page {
+	padding: 2.4rem;
+}
+
+.form-container {
+	background-color: #fff;
+	padding: 2.4rem;
+}
+
+.selection-container {
+	display: grid;
+
+	gap: 1.2rem;
+}
+
+.btn-container {
+	justify-self: end;
+	padding-bottom: 3.2rem;
+}
+
+.selection-list {
+	// max-width: 80rem;
+	//TODO: this is done by the page container
+
+	line-height: 1.8;
+	justify-content: center;
+	padding-bottom: 1.6rem;
+
+	&__link {
+		text-decoration: none;
+		color: $text-link;
+		font-size: 1.6rem;
+		padding: 0 1.2rem;
+	}
+}
+
+@media (min-width: 900px) {
+	.form-page {
+		width: 80vw;
+		margin: 0 auto;
+	}
+}
+@media (min-width: 1200px) {
+	.form-page {
+		width: 50vw;
+		margin: 0 auto;
+	}
+}

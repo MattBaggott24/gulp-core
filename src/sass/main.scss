@@ -32,10 +32,10 @@
 	margin: 0 auto;
 }
 
-// .locked {
-// 	height: 100%;
-// 	overflow: hidden;
-// }
+.locked {
+	height: 100%;
+	overflow: hidden;
+}
 
 .full-width {
 	width: calc(100vw - (100vw - 100%));
@@ -45,10 +45,6 @@
 	display: flex;
 	gap: 1.2rem;
 	align-items: flex-start;
-}
-
-.center {
-	margin: 0 auto;
 }
 
 .invisible {
@@ -64,6 +60,9 @@
 	gap: 1.2rem;
 	align-items: flex-start;
 }
+.center {
+	margin: 0 auto;
+}
 
 @media (max-width: 900px) {
 	.grid-3cols {
@@ -73,4 +72,28 @@
 
 .block {
 	height: 65vh;
+}
+
+.primary-heading {
+	font-size: 3.6rem;
+	font-weight: 600;
+	// styles
+}
+
+.secondary-heading {
+	font-size: 2.4rem;
+	font-weight: 600;
+	// styles
+}
+
+.green-heading {
+	color: $background-green;
+}
+
+.grey-heading {
+	color: $secondary-text;
+}
+
+.top-padding {
+	padding-top: 3.2rem;
 }
