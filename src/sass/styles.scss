@@ -5,11 +5,13 @@
 
 html {
 	font-size: 62.5%;
+	font-family: "Mohave", sans-serif;
+	letter-spacing: 0.2;
 }
-
 @import "variables.scss";
+@import "main.scss";
+
 @import "elements/elements.scss";
 @import "partials/partials.scss";
 @import "templates/templates.scss";
 @import "components/components.scss";
-

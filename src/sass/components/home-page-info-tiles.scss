@@ -1,0 +1,56 @@
+.info-heading {
+	font-size: 2.4rem;
+}
+
+.info-tile {
+	margin-top: 1.2rem;
+
+	&--yellow {
+		border: 2px solid $tile-yellow;
+	}
+
+	&--blue {
+		border: 2px solid $tile-blue;
+	}
+
+	&--pink {
+		border: 2px solid $pink-border;
+	}
+
+	&__item {
+		position: relative;
+		text-decoration: underline;
+		font-weight: 500;
+		font-size: 1.6rem;
+
+		&::before {
+			content: "";
+			height: 0.8rem;
+			width: 0.8rem;
+			position: absolute;
+
+			background-color: orange;
+
+			top: 50%;
+			left: 0;
+
+			transform: translateX(-150%) translateY(-50%);
+		}
+	}
+
+	&__btn {
+		color: #000;
+		margin-bottom: 1.2rem;
+		font-weight: 600;
+	}
+}
+
+.item-yellow::before {
+	background-color: $tile-yellow;
+}
+.item-blue::before {
+	background-color: $tile-blue;
+}
+.item-pink::before {
+	background-color: $pink-border;
+}

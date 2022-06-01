@@ -1,0 +1,19 @@
+{% extends "../nunjucks/templates/core.html" %}
+
+<!-- Title -->
+{% block title %} Home Page {% endblock %}
+
+<!-- Content -->
+{% block content %}
+<main>
+	<div>this is the main content</div>
+	{% include "../nunjucks/components/home-page-tiles.html" %}
+	<!-- tiles ^^^ -->
+
+	{% include "../nunjucks/components/home-page-find-help.html" %}
+	<!-- search for help ^^^ -->
+
+	{% include "../nunjucks/components/home-page-info-tiles.html" %}
+	<!-- info tiles ^^^ -->
+</main>
+{% endblock %}

@@ -1,0 +1,69 @@
+.menu-icon {
+	height: 4.2rem;
+	width: 4.2rem;
+}
+
+.search-icon {
+	height: 3.2rem;
+	width: 3.2rem;
+
+	fill: $teal-background;
+}
+
+.header-btns {
+	justify-content: end;
+	padding: 1.6rem 1.6rem 1.2rem 3.2rem;
+	&__text {
+		font-size: 1.6rem;
+		font-weight: 600;
+	}
+	&__btn {
+		padding: 0;
+
+		border: none;
+
+		background: none;
+
+		align-items: center;
+
+		gap: 0.4rem;
+	}
+
+	&__search-btn {
+		padding: 0;
+	}
+}
+
+.nav {
+	&__list {
+		padding: 4.2rem 0 3.2rem 2.4rem;
+
+		border-top: 2px solid #f1f1f1;
+
+		background-color: #fff;
+
+		box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+	}
+	&__link {
+		color: $teal-text;
+		font-size: 2rem;
+		font-weight: 500;
+		position: relative;
+	}
+	&__item {
+		padding: 0;
+	}
+}
+
+.arrow {
+	transform: rotate(270deg);
+	margin-left: 1.2rem;
+
+	border-top: 1rem solid $arrow-color;
+	border-left: 0.6rem solid transparent;
+	border-right: 0.6rem solid transparent;
+}
+
+.arrow-rotate {
+	transform: rotate(0deg) translatex(-60%) translateY(30%);
+}

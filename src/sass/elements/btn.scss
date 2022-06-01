@@ -1,0 +1,28 @@
+.btn {
+	border: 2px solid transparent;
+	background: none;
+	padding: 0.8rem 2rem;
+	border-radius: 4px;
+	align-self: flex-start;
+	cursor: pointer;
+
+	&--yellow {
+		border-color: $tile-yellow;
+		color: $tile-yellow;
+	}
+
+	&--blue {
+		border-color: $tile-teal;
+		color: $tile-teal;
+	}
+
+	&--pink {
+		border-color: $pink-border;
+		color: $pink-border;
+	}
+
+	&--white {
+		border-color: #fff;
+		color: #fff;
+	}
+}

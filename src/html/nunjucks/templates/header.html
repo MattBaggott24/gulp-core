@@ -1,0 +1,92 @@
+<header class="header">
+	<script src="../js/mobile-nav.js" defer></script>
+	{% include "../components/title-shape.html" %}
+	<nav class="nav">
+		<div class="header-btns horiz-flex">
+			<button class="header-btns__btn horiz-flex btn">
+				<p class="header-btns__text">Menu</p>
+				<svg
+					id="menu-open"
+					class="menu-icon"
+					stroke="currentColor"
+					fill="currentColor"
+					stroke-width="0"
+					viewBox="0 0 512 512"
+					height="1em"
+					width="1em"
+					xmlns="http://www.w3.org/2000/svg"
+				>
+					<path
+						d="M432 176H80c-8.8 0-16-7.2-16-16s7.2-16 16-16h352c8.8 0 16 7.2 16 16s-7.2 16-16 16zM432 272H80c-8.8 0-16-7.2-16-16s7.2-16 16-16h352c8.8 0 16 7.2 16 16s-7.2 16-16 16zM432 368H80c-8.8 0-16-7.2-16-16s7.2-16 16-16h352c8.8 0 16 7.2 16 16s-7.2 16-16 16z"
+					></path>
+				</svg>
+				<!-- open ^^^ -->
+				<svg
+					id="menu-close"
+					class="menu-icon invisible"
+					stroke="currentColor"
+					fill="currentColor"
+					stroke-width="0"
+					viewBox="0 0 16 16"
+					height="1em"
+					width="1em"
+					xmlns="http://www.w3.org/2000/svg"
+				>
+					<path
+						fill-rule="evenodd"
+						clip-rule="evenodd"
+						d="M7.116 8l-4.558 4.558.884.884L8 8.884l4.558 4.558.884-.884L8.884 8l4.558-4.558-.884-.884L8 7.116 3.442 2.558l-.884.884L7.116 8z"
+					></path>
+				</svg>
+				<!-- close ^^^ -->
+			</button>
+			<button class="btn header-btns__search-btn">
+				<svg
+					class="search-icon"
+					stroke="currentColor"
+					fill="currentColor"
+					stroke-width="0"
+					viewBox="0 0 16 16"
+					height="1em"
+					width="1em"
+					xmlns="http://www.w3.org/2000/svg"
+				>
+					<path
+						fill-rule="evenodd"
+						d="M10.442 10.442a1 1 0 011.415 0l3.85 3.85a1 1 0 01-1.414 1.415l-3.85-3.85a1 1 0 010-1.415z"
+						clip-rule="evenodd"
+					></path>
+					<path
+						fill-rule="evenodd"
+						d="M6.5 12a5.5 5.5 0 100-11 5.5 5.5 0 000 11zM13 6.5a6.5 6.5 0 11-13 0 6.5 6.5 0 0113 0z"
+						clip-rule="evenodd"
+					></path>
+				</svg>
+			</button>
+		</div>
+
+		<ul class="nav__list vert-flex invisible">
+			<li class="horiz-flex nav__item">
+				<a class="text-link nav__link" href="home-page.html">Your Home</a>
+				<div class="arrow"></div>
+			</li>
+			<li class="horiz-flex nav__item">
+				<a class="text-link nav__link" href="#">Find a home</a>
+				<div class="arrow"></div>
+			</li>
+			<li class="horiz-flex nav__item">
+				<a class="text-link nav__link" href="#">Get involved</a>
+				<div class="arrow"></div>
+			</li>
+			<li class="horiz-flex nav__item">
+				<a class="text-link nav__link" href="#">Work & training</a>
+				<div class="arrow"></div>
+			</li>
+			<li class="horiz-flex nav__item">
+				<a class="text-link nav__link" href="#">About us</a>
+				<div class="arrow"></div>
+			</li>
+			<li><a class="text-link nav__link" href="#">Contact us</a></li>
+		</ul>
+	</nav>
+</header>
