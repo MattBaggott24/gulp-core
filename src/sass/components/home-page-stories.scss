@@ -1,0 +1,20 @@
+.stories {
+	background-color: #f9f7f7;
+
+	&__heading {
+		padding: 3.2rem 0;
+	}
+	&__tile {
+		background-color: #fff;
+		box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+	}
+
+	&__btn {
+		font-weight: 600;
+	}
+
+	&__text {
+		font-size: 1.5rem;
+		line-height: 1.1;
+	}
+}

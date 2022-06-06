@@ -45,12 +45,36 @@
 }
 
 .secondary-heading {
-	font-size: 2.8rem;
+	font-size: 3.4rem;
 	letter-spacing: 0.2px;
+	font-weight: normal;
 
+	color: $teal-text;
+	line-height: 1.1;
+	font-weight: 600;
+}
+
+.tertiary-heading {
+	font-size: 3.2rem;
+	font-weight: 500;
+	line-height: 1.1;
 	color: $teal-text;
 }
 
 .center {
 	margin: 0 auto;
+}
+
+.bold {
+	font-weight: 600;
+}
+
+.lg-text {
+	font-size: 2.8rem;
+}
+
+.magazine-img {
+	transform: rotate(-6deg);
+	height: 14rem;
+	width: 14rem;
 }

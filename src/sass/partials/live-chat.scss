@@ -1,0 +1,30 @@
+.chat-icon {
+	height: 5.4rem;
+	width: 5.4rem;
+
+	stroke: $teal-background;
+}
+
+.live-chat {
+	background-color: #fff;
+	box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.15);
+
+	cursor: pointer;
+
+	height: 10rem;
+	width: 10rem;
+
+	border-radius: 8px;
+
+	z-index: 11;
+
+	position: sticky;
+
+	bottom: 4%;
+	left: 70%;
+
+	&__text {
+		font-weight: 600;
+		font-size: 1.6rem;
+	}
+}

@@ -1,0 +1,38 @@
+.homebuilder {
+	margin-top: 3.2rem;
+	background-color: $teal-background;
+
+	&__heading {
+		font-size: 4.2rem;
+		color: #fff;
+		font-weight: 600;
+	}
+
+	&__text {
+		font-size: 2.2rem;
+		color: #fff;
+	}
+
+	&__btn {
+		font-weight: 600;
+		font-size: 1.8rem;
+
+		width: 24rem;
+		padding: 1.2rem 0;
+	}
+}
+
+.homehub-icon {
+	height: 6.4rem;
+	width: 6.4rem;
+	fill: #fff;
+}
+
+.subheading {
+	font-size: 3.6rem;
+	color: #fff;
+}
+.sub-subheading {
+	font-size: 2.2rem;
+	color: #fff;
+}

@@ -8,6 +8,14 @@ html {
 	font-family: "Mohave", sans-serif;
 	letter-spacing: 0.2;
 }
+
+body {
+	position: relative;
+}
+
+a {
+	color: #1f1f1f;
+}
 @import "variables.scss";
 @import "main.scss";
 
