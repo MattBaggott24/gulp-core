@@ -1,0 +1,16 @@
+.ownership {
+	background-color: $pink-border;
+	&__heading {
+		color: #fff;
+	}
+}
+
+@media (min-width: 900px) {
+	.ownership {
+		align-items: center;
+		justify-content: space-around;
+		flex-direction: row;
+
+		padding: 2.4rem 3.2rem;
+	}
+}

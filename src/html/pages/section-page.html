@@ -1,0 +1,26 @@
+{% extends "../nunjucks/templates/core.html" %} {% block title %} Section Page {% endblock %}
+<!-- title ^^^ -->
+
+{% block content %}
+<main class="footer-bg">
+	<!-- TODO: inline -->
+	<section class="outline vert-flex">
+		<div class="horiz-flex outline__group">
+			<a class="text-link outline__link para-text" href="home-page.html">Home</a>
+			<div class="arrow outline__arrow"></div>
+		</div>
+		<h1 class="primary-header outline__header">About Us</h1>
+	</section>
+	<!-- page outline ( home > About us) ^^^ -->
+
+	{% include "../nunjucks/components/section-page/about-tile.html" %}
+	<!-- about tile with image ^^^-->
+
+	{% include "../nunjucks/components/section-page/info-tiles.html" %}
+	<!-- 3 col grid (desktop)(1 col grid mobile) ^^ -->
+
+	{% include "../nunjucks/components/section-page/ownership-banner.html" %}
+	<!-- shared ownership banner ^^^-->
+</main>
+
+{% endblock %}

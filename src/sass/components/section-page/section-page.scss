@@ -1,0 +1,17 @@
+@import "about-tile.scss";
+@import "info-tiles.scss";
+@import "ownership-banner.scss";
+
+.outline {
+	&__link {
+		text-decoration: underline;
+	}
+
+	&__group {
+		padding-left: 0;
+	}
+
+	&__arrow {
+		border-top: 1rem solid $teal-background;
+	}
+}

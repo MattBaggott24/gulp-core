@@ -1,0 +1,29 @@
+.about {
+	padding: 1.2rem 3.2rem;
+
+	padding-bottom: 24rem;
+
+	position: relative;
+
+	display: flex;
+
+	&__tile {
+		box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.1);
+
+		z-index: 2;
+		background-color: #fff;
+
+		&__text {
+			font-size: 1.8rem;
+		}
+	}
+
+	&__img {
+		width: 100vw;
+		position: absolute;
+		bottom: 5%;
+		left: 0;
+
+		z-index: 1;
+	}
+}

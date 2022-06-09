@@ -1,0 +1,63 @@
+.stories {
+	background-color: $footer-bg;
+
+	position: relative;
+
+	padding-bottom: 28rem;
+
+	&__heading {
+		padding: 3.2rem 0;
+		font-size: 3.6rem;
+	}
+	&__tile {
+		background-color: #fff;
+		box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+
+		padding: 3.2rem 2.4rem;
+
+		z-index: 100;
+	}
+
+	&__btn-container {
+		display: flex;
+		flex-direction: column;
+		gap: 1rem;
+	}
+	&__btn {
+		font-weight: 600;
+		padding: 1rem 2.4rem;
+	}
+
+	&__text {
+		font-size: 1.6rem;
+		line-height: 1.1;
+	}
+
+	&__img {
+		width: 100vw;
+		position: absolute;
+		bottom: 5%;
+		left: 0;
+	}
+}
+
+@media (min-width: 900px) {
+	.stories {
+		padding-left: 8vw;
+
+		&__tile {
+			width: 25rem;
+
+			padding: 3.2rem 2.4rem;
+		}
+
+		&__btn-container {
+			flex-direction: row;
+		}
+
+		&__btn {
+			padding: 0.6rem 1.2rem;
+			font-size: 1.2rem;
+		}
+	}
+}

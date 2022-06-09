@@ -12,5 +12,5 @@ const menuBurger = document.getElementsByClassName("header-btns__btn")[0];
 menuBurger.addEventListener("click", () => {
 	document.getElementById("menu-close").classList.toggle("invisible");
 	document.getElementById("menu-open").classList.toggle("invisible");
-	document.getElementsByClassName("nav__list")[0].classList.toggle("invisible");
+	document.getElementsByClassName("nav__list")[0].classList.toggle("visible");
 });

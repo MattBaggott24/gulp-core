@@ -1,0 +1,71 @@
+.help-container {
+	overflow-x: hidden;
+}
+
+.help {
+	margin: 3.2rem auto 1.2rem auto;
+
+	padding: 3.2rem;
+	padding-bottom: 2.4rem;
+
+	background-color: $teal-background;
+
+	border-radius: 8px;
+
+	width: 70vw;
+
+	gap: 0.4rem;
+
+	position: relative;
+
+	&__title {
+		color: #fff;
+		font-size: 2.4rem;
+	}
+
+	&__input {
+		border: none;
+		height: 4rem;
+		width: 85%;
+		padding-left: 0.4rem;
+		font-size: 1.6rem;
+	}
+	&__img {
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		transform: translateX(30%);
+	}
+}
+
+.btn__search {
+	margin-top: 0.6rem;
+	padding: 0.8rem 4.2rem;
+
+	font-size: 1.8rem;
+	font-weight: 500;
+}
+
+@media (min-width: 900px) {
+	.help {
+		width: 50vw;
+
+		&__title {
+			font-size: 3.6rem;
+		}
+
+		&__input {
+			width: 78%;
+		}
+
+		&__container {
+			display: flex;
+			gap: 1.2rem;
+			padding-bottom: 1.2rem;
+		}
+	}
+
+	.btn__search {
+		margin: 0;
+	}
+}

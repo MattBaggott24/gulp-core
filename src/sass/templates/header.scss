@@ -13,6 +13,9 @@
 .header-btns {
 	justify-content: end;
 	padding: 1.6rem 1.6rem 1.2rem 3.2rem;
+
+	// background-color: orange;
+	// z-index: 10;
 	&__text {
 		font-size: 1.6rem;
 		font-weight: 600;
@@ -45,6 +48,12 @@
 		background-color: #fff;
 
 		box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+		// invisible
+		display: none;
+		visibility: none;
+
+		z-index: 100000;
 	}
 	&__link {
 		color: $teal-text;
@@ -55,6 +64,14 @@
 	&__item {
 		padding: 0;
 	}
+}
+
+.desktop-btn {
+	color: #000;
+	padding: 0.8rem 2.4rem;
+
+	display: none;
+	visibility: hidden;
 }
 
 .arrow {
@@ -68,4 +85,40 @@
 
 .arrow-rotate {
 	transform: rotate(0deg) translatex(-60%) translateY(30%);
+}
+
+@media (min-width: 900px) {
+	.nav {
+		display: flex;
+		flex-direction: column;
+
+		align-items: flex-end;
+		padding: 0 10rem;
+		&__list {
+			visibility: visible;
+			display: block;
+
+			display: flex;
+			flex-direction: row;
+			justify-content: end;
+
+			padding: 6.2rem 0 1.6rem 4.8rem;
+
+			box-shadow: none;
+		}
+
+		&__desktop-btns {
+			visibility: visible;
+			display: flex;
+			padding: 0;
+
+			align-self: flex-end;
+			z-index: 1;
+			margin-top: 1.2rem;
+		}
+	}
+	.header-btns {
+		display: none;
+		visibility: hidden;
+	}
 }

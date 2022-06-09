@@ -1,0 +1,39 @@
+.info {
+	flex: 1;
+	&__item {
+		padding: 0;
+
+		box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.1);
+	}
+
+	&__list {
+		gap: 2.4rem;
+	}
+
+	&__btn {
+		margin: auto 0 0 0;
+	}
+
+	&__text {
+		flex: 1;
+	}
+
+	&__img {
+		width: 100%;
+	}
+
+	&__graphic {
+		width: 50%;
+		padding: 2.4rem 9rem;
+	}
+}
+
+@media (min-width: 900px) {
+	.info {
+		&__list {
+			grid-template-columns: repeat(3, 1fr);
+
+			padding-bottom: 12rem;
+		}
+	}
+}

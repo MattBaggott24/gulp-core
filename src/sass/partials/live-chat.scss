@@ -11,17 +11,17 @@
 
 	cursor: pointer;
 
-	height: 10rem;
-	width: 10rem;
+	height: 8.6rem;
+	width: 8.6rem;
 
 	border-radius: 8px;
 
-	z-index: 11;
+	z-index: 100000;
 
 	position: sticky;
 
-	bottom: 4%;
-	left: 70%;
+	bottom: 1rem;
+	left: 99vw;
 
 	&__text {
 		font-weight: 600;

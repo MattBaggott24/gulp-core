@@ -1,6 +1,7 @@
 <header class="header">
 	<script src="../js/mobile-nav.js" defer></script>
 	{% include "../components/title-shape.html" %}
+
 	<nav class="nav">
 		<div class="header-btns horiz-flex">
 			<button class="header-btns__btn horiz-flex btn">
@@ -41,31 +42,50 @@
 				<!-- close ^^^ -->
 			</button>
 			<button class="btn header-btns__search-btn">
-				<svg
-					class="search-icon"
-					stroke="currentColor"
-					fill="currentColor"
-					stroke-width="0"
-					viewBox="0 0 16 16"
-					height="1em"
-					width="1em"
-					xmlns="http://www.w3.org/2000/svg"
-				>
-					<path
-						fill-rule="evenodd"
-						d="M10.442 10.442a1 1 0 011.415 0l3.85 3.85a1 1 0 01-1.414 1.415l-3.85-3.85a1 1 0 010-1.415z"
-						clip-rule="evenodd"
-					></path>
-					<path
-						fill-rule="evenodd"
-						d="M6.5 12a5.5 5.5 0 100-11 5.5 5.5 0 000 11zM13 6.5a6.5 6.5 0 11-13 0 6.5 6.5 0 0113 0z"
-						clip-rule="evenodd"
-					></path>
+				<svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="34.413" height="34.189" viewBox="0 0 34.413 34.189">
+					<g id="Group_1513" data-name="Group 1513" transform="translate(-331.055 -23.965)">
+						<path
+							id="Path_1643"
+							data-name="Path 1643"
+							d="M10.492,20.835a10.461,10.461,0,0,1-7.419-3.051,10.365,10.365,0,0,1,0-14.732,10.545,10.545,0,0,1,14.838,0,10.365,10.365,0,0,1,0,14.732A10.462,10.462,0,0,1,10.492,20.835Zm0-18.383a7.966,7.966,0,1,0,8.023,7.966A8,8,0,0,0,10.492,2.452Z"
+							transform="translate(331.055 38.803) rotate(-45)"
+							fill="#24a3b0"
+						/>
+						<rect
+							id="Rectangle_1496"
+							data-name="Rectangle 1496"
+							width="2.84"
+							height="12.07"
+							transform="translate(353.418 44.096) rotate(-45)"
+							fill="#24a3b0"
+						/>
+						<rect
+							id="Rectangle_1497"
+							data-name="Rectangle 1497"
+							width="2.84"
+							height="12.07"
+							transform="translate(349.402 48.113) rotate(-45)"
+							fill="#24a3b0"
+						/>
+						<rect
+							id="Rectangle_1498"
+							data-name="Rectangle 1498"
+							width="2.84"
+							height="8.52"
+							transform="translate(363.459 50.121) rotate(45)"
+							fill="#24a3b0"
+						/>
+					</g>
 				</svg>
 			</button>
 		</div>
 
-		<ul class="nav__list vert-flex invisible">
+		<div class="nav__desktop-btns horiz-flex">
+			<button class="btn btn--blue desktop-btn">Log in to my Plus Dane</button>
+			<button class="btn btn--blue desktop-btn">Search</button>
+		</div>
+
+		<ul class="nav__list vert-flex">
 			<li class="horiz-flex nav__item">
 				<a class="text-link nav__link" href="home-page.html">Your Home</a>
 				<div class="arrow"></div>
@@ -83,10 +103,12 @@
 				<div class="arrow"></div>
 			</li>
 			<li class="horiz-flex nav__item">
-				<a class="text-link nav__link" href="#">About us</a>
+				<a class="text-link nav__link" href="section-page.html">About us</a>
 				<div class="arrow"></div>
 			</li>
 			<li><a class="text-link nav__link" href="#">Contact us</a></li>
 		</ul>
 	</nav>
 </header>
+
+<!-- TODO: ADD DESKTOP BUTTONS -->

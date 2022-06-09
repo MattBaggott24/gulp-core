@@ -1,0 +1,92 @@
+.homebuilder {
+	margin-top: 3.2rem;
+	background-color: $teal-background;
+
+	position: relative;
+
+	padding-bottom: 12rem;
+
+	overflow: hidden;
+
+	// &__text-container {
+	// 	padding: 3.2rem;
+	// }
+
+	&__icon-text {
+		align-items: center;
+	}
+
+	&__heading {
+		font-size: 3.6rem;
+		color: #fff;
+		font-weight: 500;
+	}
+
+	&__text {
+		font-size: 1.8rem;
+		font-weight: 600;
+		color: #fff;
+
+		line-height: 1.5;
+	}
+
+	&__btn {
+		font-weight: 600;
+		font-size: 1.8rem;
+
+		width: 24rem;
+		padding: 1.2rem 0;
+
+		z-index: 100;
+
+		&--filled {
+			background-color: $teal-background;
+		}
+	}
+
+	&__img {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+
+		transform: translateX(25%);
+	}
+}
+
+.homehub-icon {
+	height: 5rem;
+	fill: #fff;
+}
+
+.subheading {
+	font-size: 3.2rem;
+	font-weight: 300;
+	color: #fff;
+}
+.sub-subheading {
+	font-size: 2.2rem;
+	font-weight: 400;
+	color: #fff;
+}
+
+@media (min-width: 900px) {
+	.homebuilder {
+		&__text-container {
+			margin-left: 6vw;
+			width: 40vw;
+		}
+
+		&__heading {
+			padding-top: 3.2rem;
+		}
+
+		&__text {
+			font-size: 1.8rem;
+		}
+
+		&__btn {
+			font-size: 1.4rem;
+			padding: 1rem 1.6rem;
+		}
+	}
+}

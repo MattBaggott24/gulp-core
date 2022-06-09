@@ -5,8 +5,10 @@
 
 html {
 	font-size: 62.5%;
-	font-family: "Mohave", sans-serif;
+	font-family: "Josefin Sans", sans-serif;
 	letter-spacing: 0.2;
+
+	overflow-x: hidden;
 }
 
 body {
@@ -23,3 +25,9 @@ a {
 @import "partials/partials.scss";
 @import "templates/templates.scss";
 @import "components/components.scss";
+
+@media (min-width: 900px) {
+	// html {
+	// 	font-size: 75%;
+	// }
+}
